@@ -1,0 +1,25 @@
+ This program was written on the suggestion of Ian Ameline of IBM, so if
+it doesn't work, blame him <g>.
+
+ This program will load the IBM C Set/2 compiler into memory and then
+will sleep until interrupted by a sigint (CTRL+C).  By keeping the compiler
+in memory, all the compiler loading for each module is avoided.  If there
+is not enough memory, the compiler will be discarded and reloaded when
+necessary, so this program will not cause swapping to occur.  In other
+words, if you have sufficient memory, you'll obtain a significant boost
+in performance. If you don't have enough memory, this program will not
+have a negative impact.
+
+
+ The easiest way to use this program is to create a program object. Set the
+working directory to \ibmc\bin, set the OS/2 window to minimize and
+execute the program before running your build. When through, maximize the
+window that contains the program and type CTRL+C to kill the program.
+
+You may modify, give away, throw away or do anything to this program you
+like.  If you do improve it, we all would appreciate it if you would
+pass on the improvements.
+
+Good luck,
+
+ Matt Osborn 75230,1346

@@ -1,0 +1,16 @@
+# IBM Developer's Workframe/2 Make File Creation run at 17:47:57 on 03/03/93
+
+# Make File Creation run in directory:
+#   E:\NBUILD\DEV\TEST;
+
+# Assumed INCLUDE environment variable path:
+#   e:\ibmc\include;
+#   e:\net20;
+#   e:\toolkt20\c\os2h;
+#   e:\toolkt20\asm\os2inc;
+
+
+licc.OBJ:  licc.c  \
+#  {$(INCLUDE);}os2.h  \
+#  {$(INCLUDE);}stdio.h  \
+   licc.MAK
